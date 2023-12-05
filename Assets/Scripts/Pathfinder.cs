@@ -6,6 +6,7 @@ public class Pathfinder : MonoBehaviour
     [SerializeField] GameObject target;
     [SerializeField] float speed = 100f;
     [SerializeField] float rotationSpeed = 10f;
+    [SerializeField] bool moveInLine = false;
     [SerializeField] List<Transform> waypoints;
     List<Vector3> bezierWaypointsPosition;
     Vector3 gizmoPos;
@@ -42,8 +43,14 @@ public class Pathfinder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //MoveInLine();
-        MoveInCurve();
+        if (moveInLine)
+        {
+            MoveInLine();
+        }
+        else
+        {
+            MoveInCurve();
+        }
         //if (!coroutineActive) StartCoroutine(MoveInCurve());
     }
 
