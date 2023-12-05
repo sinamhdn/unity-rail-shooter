@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("Controller")]
     [SerializeField][Tooltip("In m/s")] float horizontalSpeed = 20f;
     [SerializeField][Tooltip("In m/s")] float verticalSpeed = 20f;
     [SerializeField][Tooltip("In m/s")] float horizontalRange = 5f;
@@ -11,17 +12,16 @@ public class Player : MonoBehaviour
     [SerializeField] float yawFactorPosition = 5f;
     [SerializeField] float rollFactorControl = -20f;
     float horizontalThrow, verticalThrow;
-
-    void Start()
-    {
-
-    }
+    bool isControlEnabled = true;
 
     void Update()
     {
-        XMovement();
-        YMovement();
-        Rotation();
+        if (isControlEnabled)
+        {
+            XMovement();
+            YMovement();
+            Rotation();
+        }
     }
 
     void XMovement()
@@ -60,5 +60,11 @@ public class Player : MonoBehaviour
         float yaw = transform.localPosition.x * yawFactorPosition;
         float roll = horizontalThrow * rollFactorControl;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    //dont rename (string reference)
+    void OnDeath()
+    {
+        isControlEnabled = false;
     }
 }

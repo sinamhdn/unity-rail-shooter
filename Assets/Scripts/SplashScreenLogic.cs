@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MusicPlayer : MonoBehaviour
+public class SplashScreenLogic : MonoBehaviour
 {
     void Awake()
     {

@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 5084406355554938629}
   - component: {fileID: 5586029193700469647}
   - component: {fileID: 956462168578022020}
+  - component: {fileID: 2124438437543444155}
+  - component: {fileID: 1352357016165027005}
   - component: {fileID: 5574259054699849949}
+  - component: {fileID: 2789961025618142147}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -86,6 +89,54 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &2124438437543444155
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583774022119424012}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1352357016165027005
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583774022119424012}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.8120017, y: 0.5694971, z: 3.2518137}
+  m_Center: {x: -0.00000017881393, y: -0.000015214086, z: 0}
 --- !u!114 &5574259054699849949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100,12 +151,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 20
   verticalSpeed: 20
-  horizontalRange: 5
-  verticalRange: 3
+  horizontalRange: 6.2
+  verticalRange: 4.2
   pitchFactorPosition: -5
   pitchFactorControl: -20
   yawFactorPosition: 5
   rollFactorControl: -20
+--- !u!114 &2789961025618142147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4583774022119424012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac448ce486e51eb4a9ae4c2b4d062c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &343053880992196206
 PrefabInstance:
   m_ObjectHideFlags: 0

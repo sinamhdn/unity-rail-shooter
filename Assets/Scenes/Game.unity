@@ -1247,7 +1247,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1878451638
 Transform:
@@ -1279,7 +1279,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1813,14 +1813,6 @@ PrefabInstance:
     - target: {fileID: 5084406355554938629, guid: c48cbe667f2f0d24c9fc4c614f9f25e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5574259054699849949, guid: c48cbe667f2f0d24c9fc4c614f9f25e7, type: 3}
-      propertyPath: verticalRange
-      value: 4.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5574259054699849949, guid: c48cbe667f2f0d24c9fc4c614f9f25e7, type: 3}
-      propertyPath: horizontalRange
-      value: 6.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
