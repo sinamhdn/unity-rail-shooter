@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7531884871461539495}
   - component: {fileID: 4715210308961312841}
   - component: {fileID: 2813992314388323970}
-  - component: {fileID: -382546001311755567}
+  - component: {fileID: -2105317341866299530}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Untagged
@@ -84,24 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-382546001311755567
-BoxCollider:
+--- !u!114 &-2105317341866299530
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5574528725720043798}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.48629335, y: 0.12809297, z: 0.7095403}
-  m_Center: {x: -8.881784e-16, y: -0.0000000037252903, z: -0.00000002980233}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8cab01ba3e38e449a1657bb5836d60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explodeFX: {fileID: 5905420536071675273, guid: 38e971288dd116e4bbb54e83863851c4, type: 3}

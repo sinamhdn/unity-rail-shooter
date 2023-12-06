@@ -1,13 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SplashScreenLogic : MonoBehaviour
+public class FirstLevelLoader : MonoBehaviour
 {
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     void Start()
     {
         Invoke("LoadFirstLevel", 2f);
