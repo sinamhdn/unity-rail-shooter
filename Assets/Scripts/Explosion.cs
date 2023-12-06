@@ -4,11 +4,6 @@ public class Explosion : MonoBehaviour
 {
     void Start()
     {
-        Destroy(gameObject, 5f);
-    }
-
-    void Update()
-    {
-
+        if (!gameObject.GetComponentInParent<Player>()) Destroy(gameObject, 5f);
     }
 }

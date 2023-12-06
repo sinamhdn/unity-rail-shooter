@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2789961025618142147}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
   explodeFX: {fileID: 4355534745203862437}
+  destroyDelay: 0.2
 --- !u!1001 &343053880992196206
 PrefabInstance:
   m_ObjectHideFlags: 0
