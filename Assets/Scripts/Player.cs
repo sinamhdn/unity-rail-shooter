@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
             XMovement();
             YMovement();
             Rotation();
+            Fire();
         }
     }
 
@@ -60,6 +61,20 @@ public class Player : MonoBehaviour
         float yaw = transform.localPosition.x * yawFactorPosition;
         float roll = horizontalThrow * rollFactorControl;
         transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
+    }
+
+    void Fire()
+    {
+        if (Input.GetButton("Fire1"))
+        {
+            transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
+            transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Play();
+        }
+        else
+        {
+            transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Pause();
+            transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Pause();
+        }
     }
 
     //dont rename (string reference)

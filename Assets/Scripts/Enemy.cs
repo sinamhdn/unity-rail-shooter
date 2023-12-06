@@ -4,8 +4,9 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject explodeFX;
     [SerializeField] Transform parent;
+    [SerializeField] int scoreValue = 10;
+    [SerializeField] int hits = 10;
     ScoreDisplay scoreDisplay;
-    int scoreValue = 10;
 
     void Start()
     {
@@ -17,15 +18,21 @@ public class Enemy : MonoBehaviour
     {
         //print("particles collided with game object " + gameObject.name);
         //Destroy(other);
-        GameObject fx = Instantiate(explodeFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;
         scoreDisplay.Scored(scoreValue);
-        Destroy(gameObject);
+        hits--;
+        if (hits <= 0) Die();
     }
 
     void AddNonTriggerBoxCollider()
     {
         Collider boxCollider = gameObject.AddComponent<BoxCollider>();
         boxCollider.isTrigger = false;
+    }
+
+    void Die()
+    {
+        GameObject fx = Instantiate(explodeFX, transform.position, Quaternion.identity);
+        fx.transform.parent = parent;
+        Destroy(gameObject);
     }
 }
