@@ -67,13 +67,20 @@ public class Player : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
-            transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Play();
+            if (transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().isPaused)
+            {
+                transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
+                transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Play();
+            }
         }
         else
         {
-            transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Pause();
-            transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Pause();
+            if (transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().isPlaying)
+            {
+                // or we can just disable the emission module of the particle system
+                transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Pause();
+                transform.GetChild(1).gameObject.GetComponent<ParticleSystem>().Pause();
+            }
         }
     }
 
