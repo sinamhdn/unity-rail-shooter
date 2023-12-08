@@ -3284,7 +3284,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.3333333333333335
+    m_Start: 3.1
     m_ClipIn: 0
     m_Asset: {fileID: -2933192354793986853}
     m_Duration: 1.6508843537414966
@@ -3353,7 +3353,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TalkingHead
   - m_Version: 1
-    m_Start: 6.85
+    m_Start: 7.683333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 7718775181807667908}
     m_Duration: 1.6508843537414961
@@ -3422,7 +3422,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TalkingHead
   - m_Version: 1
-    m_Start: 13.616666666666667
+    m_Start: 14.45
     m_ClipIn: 0
     m_Asset: {fileID: -8005840652903963780}
     m_Duration: 1.6508843537414961
@@ -3491,7 +3491,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: TalkingHead
   - m_Version: 1
-    m_Start: 17.716666666666665
+    m_Start: 18.466666666666665
     m_ClipIn: 0
     m_Asset: {fileID: -1940874542028135904}
     m_Duration: 1.6508843537414961
@@ -3646,7 +3646,7 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 2.3333333333333335
+    m_Start: 3.1
     m_ClipIn: 0
     m_Asset: {fileID: -4797549972655815201}
     m_Duration: 1.6508843537414966
@@ -3715,7 +3715,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: EnemiesApproaching
   - m_Version: 1
-    m_Start: 6.85
+    m_Start: 7.683333333333334
     m_ClipIn: 0
     m_Asset: {fileID: -6469668304509006545}
     m_Duration: 1.6508843537414966
@@ -3784,7 +3784,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: EnemiesApproaching
   - m_Version: 1
-    m_Start: 13.616666666666667
+    m_Start: 14.45
     m_ClipIn: 0
     m_Asset: {fileID: -7246961342658118731}
     m_Duration: 1.6508843537414966
@@ -3853,7 +3853,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: EnemiesApproaching
   - m_Version: 1
-    m_Start: 17.716666666666665
+    m_Start: 18.466666666666665
     m_ClipIn: 0
     m_Asset: {fileID: 2820632105857818828}
     m_Duration: 1.6508843537414966
