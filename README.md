@@ -21,7 +21,7 @@ Fonts are from dafont.com\
 - Bump map, Height map, Normal map
 - Change skybox
 - Singleton pattern
-- Created pathfinder script based on cubic bezier formula between multiple game objects and waypoints
+- Created follow path script based on cubic bezier formula between multiple game objects as waypoints
 - Control throw in cross platform input manager
 - Transform vs Local Transform
 - Mathf.Clamp()
